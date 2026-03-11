@@ -24,11 +24,42 @@
      </rect>
     </property>
     <layout class="QGridLayout" name="MenuLayout">
-     <item row="2" column="0">
-      <widget class="QPushButton" name="CappucinoButton">
-       <property name="text">
-        <string>Cappuccino</string>
+     <item row="1" column="3">
+      <widget class="QPushButton" name="SugarButton">
+       <property name="enabled">
+        <bool>false</bool>
        </property>
+       <property name="text">
+        <string>Sugar</string>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>false</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">OptionsGroup</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="QPushButton" name="SweetnerButton">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>Sweetner</string>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>false</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">OptionsGroup</string>
+       </attribute>
       </widget>
      </item>
      <item row="0" column="0">
@@ -41,17 +72,161 @@
        </property>
       </widget>
      </item>
+     <item row="2" column="1">
+      <widget class="QPushButton" name="LatteMacchiatoButton">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>Latte Macchiato</string>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="autoRepeat">
+        <bool>false</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>false</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">CoffeeGroup</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QPushButton" name="HotChocolateButton">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>Hot Chocolate</string>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="autoRepeat">
+        <bool>false</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>false</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">CoffeeGroup</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QPushButton" name="MochaButton">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>Mocha</string>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="autoRepeat">
+        <bool>false</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>false</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">CoffeeGroup</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="AmericanoButton">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>Americano</string>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="autoRepeat">
+        <bool>false</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>false</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">CoffeeGroup</string>
+       </attribute>
+      </widget>
+     </item>
      <item row="1" column="0">
       <widget class="QPushButton" name="EspressoButton">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
        <property name="text">
         <string>Espresso</string>
        </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="autoRepeat">
+        <bool>false</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>false</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">CoffeeGroup</string>
+       </attribute>
       </widget>
      </item>
-     <item row="2" column="1">
-      <widget class="QPushButton" name="LatteMacchiatoButton">
+     <item row="3" column="3">
+      <widget class="QPushButton" name="NoneButton">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
        <property name="text">
-        <string>Latte Macchiato</string>
+        <string>None</string>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>false</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">OptionsGroup</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QPushButton" name="CappucinoButton">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>Cappuccino</string>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="autoRepeat">
+        <bool>false</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>false</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">CoffeeGroup</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QLabel" name="InvisibleLabel">
+       <property name="text">
+        <string/>
        </property>
       </widget>
      </item>
@@ -62,55 +237,6 @@
        </property>
        <property name="alignment">
         <set>Qt::AlignmentFlag::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="2">
-      <widget class="QLabel" name="InvisibleLabel">
-       <property name="text">
-        <string/>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="1">
-      <widget class="QPushButton" name="AmericanoButton">
-       <property name="text">
-        <string>Americano</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="3">
-      <widget class="QPushButton" name="DecafButton">
-       <property name="text">
-        <string>Decaf</string>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="0">
-      <widget class="QPushButton" name="HotChocolateButton">
-       <property name="text">
-        <string>Hot Chocolate</string>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="1">
-      <widget class="QPushButton" name="MochaButton">
-       <property name="text">
-        <string>Mocha</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="3">
-      <widget class="QPushButton" name="AddSugarButton">
-       <property name="text">
-        <string>Add Sugar</string>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="3">
-      <widget class="QPushButton" name="BothButton">
-       <property name="text">
-        <string>Decaf + Sugar</string>
        </property>
       </widget>
      </item>
@@ -126,7 +252,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Restart</string>
+     <string>Secundairy Button</string>
     </property>
    </widget>
    <widget class="QPushButton" name="PrimaryButton">
@@ -139,7 +265,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Insert Coin (99)</string>
+     <string>Primary Button</string>
     </property>
    </widget>
    <widget class="QWidget" name="verticalLayoutWidget">
@@ -148,7 +274,7 @@
       <x>20</x>
       <y>10</y>
       <width>291</width>
-      <height>111</height>
+      <height>121</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="OutputLayout">
@@ -156,20 +282,29 @@
       <number>0</number>
      </property>
      <property name="leftMargin">
-      <number>10</number>
+      <number>0</number>
      </property>
      <item>
       <widget class="QLabel" name="OutputSubLabel">
        <property name="font">
         <font>
-         <pointsize>10</pointsize>
+         <pointsize>8</pointsize>
         </font>
        </property>
+       <property name="styleSheet">
+        <string notr="true">color: white; background-color: black; padding-left: 10px ;</string>
+       </property>
        <property name="text">
-        <string>Welcome!</string>
+        <string>Output SubLabel</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignmentFlag::AlignBottom|Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft</set>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+       <property name="indent">
+        <number>0</number>
        </property>
       </widget>
      </item>
@@ -177,17 +312,26 @@
       <widget class="QLabel" name="OutputLabel">
        <property name="font">
         <font>
-         <pointsize>17</pointsize>
+         <pointsize>15</pointsize>
         </font>
        </property>
+       <property name="toolTipDuration">
+        <number>-1</number>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: white; background-color: black; padding-left: 10px ;</string>
+       </property>
        <property name="text">
-        <string>Insert a Coin to start...</string>
+        <string>Output Label</string>
        </property>
        <property name="textFormat">
         <enum>Qt::TextFormat::AutoText</enum>
        </property>
        <property name="alignment">
         <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignTop</set>
+       </property>
+       <property name="indent">
+        <number>0</number>
        </property>
       </widget>
      </item>
@@ -197,4 +341,16 @@
  </widget>
  <resources/>
  <connections/>
+ <buttongroups>
+  <buttongroup name="OptionsGroup">
+   <property name="exclusive">
+    <bool>false</bool>
+   </property>
+  </buttongroup>
+  <buttongroup name="CoffeeGroup">
+   <property name="exclusive">
+    <bool>false</bool>
+   </property>
+  </buttongroup>
+ </buttongroups>
 </ui>

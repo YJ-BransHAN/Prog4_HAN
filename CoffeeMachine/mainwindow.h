@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QStateMachine> //nvt
+#include <QStateMachine>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -14,45 +14,44 @@ class MainWindow : public QMainWindow
 {
     Q_OBJECT
 
-signals:
-
-    //add CoffeeSelected and OptionSelected signal to store and print to the widget
-    //void CoffeeSelected();
-    //void OptionSelected();
-
-private slots:
-
-
-
-    // Main States
-    void sRestart_main(void);
-    void sNoCoins_main(void);
-    void s1_main(void);
-    void s2_main(void);
-    void s3_main(void);
-
-    // add exit to send the message "Wait a moment.... Enjoy your coffee!"
-    void sRestart_exit(void);
-    void sNoCoins_exit(void);
-    void s1_exit(void);
-    void s3_exit(void);
 
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+
+    // Main states
+    void s1_main();
+    void s1_exit();
+
+    void s2_main();
+    void s2_exit();
+
+    void s3_main();
+    void s3_exit();
+
+    void sFinalMessage_main();
+    void sFinalMessage_exit();
+
+    // Sub states
+    void sRestart_main();
+    void sRestart_exit();
+
 private:
     Ui::MainWindow *ui;
 
-    //nvt
     QStateMachine CoffeeMachine;
 
-    //mvt
-    int CoinAmount = 99;
-    int CoinToCollect = 0;
+    int coinWallet = 0; // Coin(s) the user has left
+    int coinCollect = 0; // Coin waiting to be collected after cancelling
 
-    QString Coffee;
-    QString Option;
+    QString coffeePressed; // Selected coffee button
+    QString optionPressed; // Selected option button
+
+
+signals:
+    void finalMessage(); //Signal to go from STATE: "final message" to STATE: "s1" (after timer ends)
 };
 
-#endif // MAINWINDOW_H
+#endif

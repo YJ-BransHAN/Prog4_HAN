@@ -1,0 +1,27 @@
+@startuml
+top to bottom direction
+skinparam linetype ortho
+skinparam defaultTextAlignment center
+
+[*] --> s1
+
+state "Insert Coin" as s1 : Insert a coin to start
+state "Select Coffee" as s2 : Choose a coffee by pressing a button on the coffee menu
+state "Select Option" as s3 : Choose an option by pressing a button on the options menu
+state "Enjoy Coffee" as s4 : Enjoy your selected coffee
+state "Restart" as s5 : Collect your coin and return to the start
+
+s1 --> s2 : PrimaryButton
+s2 --> s3 : PrimaryButton
+s2 --> s5 : SecundairyButton
+s2 -[hidden]-> s5
+s2 -[hidden]-> s5
+s3 -[hidden]-> s4
+s3 --> s4 : PrimaryButton
+s3 -[hidden]-> s5
+s3 --> s5 : SecundairyButton
+s4 --> s1 : after 3 seconds
+s5 --> s1 : SecundairyButton
+
+
+@enduml
